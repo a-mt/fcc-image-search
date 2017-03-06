@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="//cdn.rawgit.com/c9/c9.ide.preview.markdown/master/github-markdown.css">
+  <style>
+    body, html{
+        margin: 0;
+        padding: 0;
+    }
+    #preview{
+        overflow: auto;
+        color: rgb(0, 0, 0);
+        
+        min-width: 200px;
+        max-width: 790px;
+        margin: 0 auto;
+        padding: 30px;
+        
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    #preview pre code div {
+        background: transparent !important;
+    }
+    #preview .ace_line {
+        white-space: pre;
+    }
+    #preview .ace_static_highlight {
+        font-family: inherit;
+        font-size: inherit;
+    }
+  </style>
+</head>
+<body>
+  <div id="preview" class="markdown-body"><%- body %></div>
+</body>
+</html>
