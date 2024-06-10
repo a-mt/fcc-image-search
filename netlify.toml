@@ -1,0 +1,10 @@
+[functions]
+  external_node_modules = ["express"]
+  node_bundler = "esbuild"
+  # Includes all HTML files
+  included_files = ["*.html"]
+[[redirects]]
+  force = true
+  from = "/*"
+  status = 200
+  to = "/.netlify/functions/api/:splat"
